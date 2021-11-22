@@ -45,19 +45,19 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgv_Productos = new System.Windows.Forms.DataGridView();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.txt_Total = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_Codigo = new System.Windows.Forms.TextBox();
-            this.labMensajes = new System.Windows.Forms.Label();
             this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Acciones = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.txt_Total = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.labMensajes = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_Codigo = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -104,7 +104,7 @@
             // labHora
             // 
             this.labHora.AutoSize = true;
-            this.labHora.Location = new System.Drawing.Point(130, 62);
+            this.labHora.Location = new System.Drawing.Point(128, 61);
             this.labHora.Name = "labHora";
             this.labHora.Size = new System.Drawing.Size(34, 13);
             this.labHora.TabIndex = 6;
@@ -113,7 +113,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(60, 33);
+            this.label4.Location = new System.Drawing.Point(60, 35);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 2;
@@ -122,7 +122,7 @@
             // labFecha
             // 
             this.labFecha.AutoSize = true;
-            this.labFecha.Location = new System.Drawing.Point(130, 33);
+            this.labFecha.Location = new System.Drawing.Point(128, 35);
             this.labFecha.Name = "labFecha";
             this.labFecha.Size = new System.Drawing.Size(55, 13);
             this.labFecha.TabIndex = 5;
@@ -131,7 +131,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(67, 62);
+            this.label5.Location = new System.Drawing.Point(67, 61);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 13);
             this.label5.TabIndex = 3;
@@ -218,6 +218,32 @@
             this.dgv_Productos.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Productos_CellEndEdit);
             this.dgv_Productos.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Productos_CellValueChanged);
             // 
+            // cantidad
+            // 
+            this.cantidad.HeaderText = "Cantidad";
+            this.cantidad.Name = "cantidad";
+            // 
+            // producto
+            // 
+            this.producto.HeaderText = "Producto";
+            this.producto.Name = "producto";
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio Unitario";
+            this.Precio.Name = "Precio";
+            // 
+            // total
+            // 
+            this.total.HeaderText = "Total";
+            this.total.Name = "total";
+            // 
+            // Acciones
+            // 
+            this.Acciones.HeaderText = "Acciones";
+            this.Acciones.Name = "Acciones";
+            this.Acciones.Text = "Eliminar";
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.panel6);
@@ -265,6 +291,15 @@
             this.panel5.Size = new System.Drawing.Size(677, 72);
             this.panel5.TabIndex = 3;
             // 
+            // labMensajes
+            // 
+            this.labMensajes.AutoSize = true;
+            this.labMensajes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labMensajes.Location = new System.Drawing.Point(61, 50);
+            this.labMensajes.Name = "labMensajes";
+            this.labMensajes.Size = new System.Drawing.Size(0, 13);
+            this.labMensajes.TabIndex = 4;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -281,41 +316,6 @@
             this.txt_Codigo.Size = new System.Drawing.Size(647, 20);
             this.txt_Codigo.TabIndex = 2;
             this.txt_Codigo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_Codigo_KeyDown);
-            // 
-            // labMensajes
-            // 
-            this.labMensajes.AutoSize = true;
-            this.labMensajes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labMensajes.Location = new System.Drawing.Point(61, 50);
-            this.labMensajes.Name = "labMensajes";
-            this.labMensajes.Size = new System.Drawing.Size(0, 13);
-            this.labMensajes.TabIndex = 4;
-            // 
-            // cantidad
-            // 
-            this.cantidad.HeaderText = "Cantidad";
-            this.cantidad.Name = "cantidad";
-            // 
-            // producto
-            // 
-            this.producto.HeaderText = "Producto";
-            this.producto.Name = "producto";
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio Unitario";
-            this.Precio.Name = "Precio";
-            // 
-            // total
-            // 
-            this.total.HeaderText = "Total";
-            this.total.Name = "total";
-            // 
-            // Acciones
-            // 
-            this.Acciones.HeaderText = "Acciones";
-            this.Acciones.Name = "Acciones";
-            this.Acciones.Text = "Eliminar";
             // 
             // frmVenta
             // 
